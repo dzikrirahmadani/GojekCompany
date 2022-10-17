@@ -1,0 +1,389 @@
+@font-face {
+    font-family: Maison-Extended-Bold;
+    src: url(fonts/MaisonNeueExtended-ExtraBold.woff);
+  }
+
+@font-face {
+    font-family: Maison-Bold;
+    src: url(fonts/MaisonNeue-Bold.woff);
+  }
+  
+@font-face {
+    font-family: Maison-Medium;
+    src: url(fonts/MaisonNeue-Medium.woff);
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1.header {
+    font-family: Maison-Extended-Bold;
+    font-weight: 7000;
+    color: #fff;
+    font-size: 75px;
+    line-height: 90px;
+}
+
+@media screen and (max-width: 580px) {
+    h1.header {
+        font-family: Maison-Extended-Bold;
+        font-weight: 7000;
+        color: #fff;
+        font-size: 60px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    h1.header {
+        font-family: Maison-Extended-Bold;
+        font-weight: 7000;
+        color: #fff;
+        font-size: 40px;   
+        line-height: 70px; 
+    }
+}
+@media screen and (max-width: 310px) {
+    h1.header {
+        font-family: Maison-Extended-Bold;
+        font-weight: 7000;
+        color: #fff;
+        font-size: 35px; 
+        line-height: 60px;    
+    }
+}
+
+.select-menu .options{
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.select-menu2 .options2{
+    display: none;
+}
+
+.select-menu2.active .options2{
+    display: block;
+}
+
+.options3 {
+    transition: 1s ease-in-out;
+}
+
+.select-menu3 .options3{
+    display: none;
+}
+
+.select-menu3.active .options3{
+    display: block;
+}
+
+.options4 {
+    transition: 1s ease-in-out;
+}
+
+.select-menu4 .options4{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.select-menu4.active .options4{
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    transition: ease-in-out .3s;
+}
+
+.nav2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    transition: ease-in-out .3s;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 9999;
+    background-color: #111827;
+}
+
+.navbar-fixed2 {
+    position: fixed;
+    z-index: 9999;
+    background-color: #111827;
+}
+
+.nav.navbar-active {
+    background-color: #111827;
+}
+
+.hamburger-active > span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.hamburger-active > span:nth-child(2) {
+    transform: scale(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.select-btn i {
+    font-size: 35px;
+    transition: .2s ease-in-out
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(180deg);
+}
+
+.select-btn2 i {
+    font-size: 35px;
+    transition: .2s ease-in-out
+}
+
+.select-menu2.active .select-btn2 i {
+    transform: rotate(180deg);
+}
+
+.select-btn3 i {
+    font-size: 35px;
+    transition: .2s ease-in-out
+}
+
+.select-menu3.active .select-btn3 i {
+    transform: rotate(180deg);
+}
+
+.select-btn4 i {
+    font-size: 35px;
+    transition: .2s ease-in-out
+}
+
+.select-menu4.active .select-btn4 i {
+    transform: rotate(180deg);
+}
+
+/* \_____RESPONSIVE_____/  */
+
+@media screen and (max-width: 1920px) {
+
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+        .card1, .card2, .card3, .card4 {
+        width: 260px;
+        margin:17px;
+    }
+
+}
+
+@media screen and (max-width: 1480px) {
+
+    .card-round {
+        height: 300px;
+    }
+    .group {
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+
+    .card-round {
+        height: 700px;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+        .card1, .card2, .card3, .card4 {
+        width: 260px;
+        margin:17px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        .card1, .card2, .card3, .card4 {
+        width: 260px;
+        margin:17px;
+    }
+
+}
+
+@media screen and (max-width: 1195px) {
+}
+
+@media screen and (max-width: 1175px) {
+
+    .card4 {
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    .group {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+
+@media screen and (max-width: 881px) {
+
+    .card3, .card4 {
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+}
+
+@media screen and (max-width: 830px) {
+}
+
+@media screen and (max-width: 767px) {
+
+    .card-round {
+        height: 950px;
+    }
+    .group {
+        height: 40%;
+    }
+
+}
+
+@media screen and (max-width: 755px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 667px) {
+
+    .card-round {
+        height: 1000px;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .card-round {
+        height: 1250px;
+    }
+
+}
+
+@media screen and (max-width: 587px) {
+
+    .card1, .card2, .card3, .card4 {
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+}
+
+
+@media screen and (max-width: 409px) {
+
+    .card-round {
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .card-round {
+        height: 1400px;
+    }
+}
+
+
+/* @media screen and (max-width: 365px) {
+} */
+
+@media screen and (max-width: 341px) {
+
+    .card-round {
+        height: 1410px;
+    }
+}
+
+@media screen and (max-width: 313px) {
+
+    .card-round {
+        height: 1500px;
+    }
+}
+
+@media screen and (max-width: 278px) {
+
+    .card-round {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 234px) {
+
+    .card-round {
+        height: 1700px;
+    }
+}
+
+
+/* \_____END_RESPONSIVE_____/  */
+
+
+.spot::before {
+    content: '';
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(0deg , rgba(12,12,12,0), rgba(12,12,12,1));
+}
