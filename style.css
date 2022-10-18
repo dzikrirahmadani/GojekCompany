@@ -1,18 +1,19 @@
 @font-face {
-    font-family: Maison-Extended-Bold;
-    src: url(fonts/MaisonNeueExtended-ExtraBold.woff);
-  }
-
-@font-face {
-    font-family: Maison-Bold;
-    src: url(fonts/MaisonNeue-Bold.woff);
-  }
-  
-@font-face {
+    
     font-family: Maison-Medium;
+    font-family: Maison-Bold;
+    font-family: Maison-Extended-Bold;
+ 
     src: url(fonts/MaisonNeue-Medium.woff);
-  }
+    src: url(fonts/MaisonNeue-Bold.woff);
+    src: url(fonts/MaisonNeueExtended-ExtraBold.woff);
+}
 
+@font-face{
+    font-family: Maison-Light;
+    src: url(fonts/MaisonNeue-Light.woff);
+}
+    
 * {
     padding: 0;
     margin: 0;
@@ -344,10 +345,6 @@ h1.header {
     }
 }
 
-
-/* @media screen and (max-width: 365px) {
-} */
-
 @media screen and (max-width: 341px) {
 
     .card-round {
@@ -380,10 +377,567 @@ h1.header {
 /* \_____END_RESPONSIVE_____/  */
 
 
-.spot::before {
+.group::before {
     content: '';
     position: absolute;
     height: 500px;
     width: 100%;
-    background: linear-gradient(0deg , rgba(12,12,12,0), rgba(12,12,12,1));
+    background: linear-gradient(0deg , rgba(12,12,12,0), rgba(12,12,12,.8));
+}
+
+/* \_____GROUP_RESPONSIVE_____/  */
+
+@media screen and (min-width: 1200px) {
+    section.group {
+        height: 900px;
+    }
+    div.group {
+        height: 50%;
+    }
+    .cards2 {
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+    }
+    .card-1 {
+        width: 360px;
+        height: 420px;
+    }
+    .logo-icon1 {
+        margin-top: -130px;
+        margin-left: -950px;
+    }
+    .logo-icon2 {
+        margin-top: -130px;
+        margin-left: -150px;
+    }
+    .logo-icon3 {
+        margin-top: -130px;
+        margin-left: 620px;
+    }
+    .selengkapnya {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .troops {
+        font-family: Maison-Extended-Bold;
+        margin-top: 50px;
+        padding: 0px 30px 0px 30px;
+    }
+    .talent {
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    section.group {
+        height: 1300px;
+    }
+    div.group {
+        height: 40%;
+    }
+    .cards2 {
+        margin-top: -50px;
+        display: grid;
+        gap: 130px;
+    }
+    .card-1 {
+        width: 550px;
+        height: 250px;
+    }
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 280px;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 280px;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 280px;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .troops {
+        padding: 0px 5px 0px 60px;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0px 5px 0px 60px;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 23%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 23%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 23%;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 22%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 22%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 21%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 21%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 21%;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 20%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 20%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 18%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 18%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 16%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 16%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 14%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 14%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 14%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 12%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 12%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 781px) {
+    .logo-icon1 {
+        margin-top: -10px;
+        margin-left: 10%;
+    }
+    .logo-icon2 {
+        margin-top: 280px;
+        margin-left: 10%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    div.group {
+        height: 30%;
+    }
+    .cards2 {
+        margin-top: -60px;
+        display: grid;
+        gap: 130px;
+    }
+    .card-1 {
+        width: 550px;
+        height: 300px;
+    }
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 17%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 17%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 17%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 14%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 14%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 14%;
+    }
+
+}
+
+@media screen and (max-width: 631px) {
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 12%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 12%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 12%;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 10%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 10%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 10%;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+    .card-1 {
+        width: 400px;
+        height: 300px;
+    }
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 20%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 20%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 20%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 18%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 18%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 16%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 16%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 14%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 14%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 14%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .card-1 {
+        width: 350px;
+        height: 300px;
+    }
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 17%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 17%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 17%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 15%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 15%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .card-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .logo-icon1 {
+        margin-top: -110px;
+        margin-left: 15%;
+    }
+    .logo-icon2 {
+        margin-top: 230px;
+        margin-left: 15%;
+    }
+    .logo-icon3 {
+        margin-top: 570px;
+        margin-left: 15%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    section.group {
+        height: 1600px;
+    }
+    div.group {
+        height: 25%;
+    }
+    .cards2 {
+        margin-top: -70px;
+        display: grid;
+        gap: 130px;
+    }
+    .card-1 {
+        width: 250px;
+        height: 390px;
+    }
+
+    .logo-icon1 {
+        margin-top: -120px;
+        margin-left: 20%;
+    }
+    .logo-icon2 {
+        margin-top: 310px;
+        margin-left: 20%;
+    }
+    .logo-icon3 {
+        margin-top: 740px;
+        margin-left: 20%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 279px) {
+    section.group {
+        height: 1800px;
+    }
+    div.group {
+        height: 25%;
+    }
+    .cards2 {
+        margin-top: -70px;
+        display: grid;
+        gap: 130px;
+    }
+    .card-1 {
+        width: 200px;
+        height: 450px;
+    }
+
+    .logo-icon1 {
+        margin-top: -120px;
+        margin-left: 20%;
+    }
+    .logo-icon2 {
+        margin-top: 370px;
+        margin-left: 20%;
+    }
+    .logo-icon3 {
+        margin-top: 860px;
+        margin-left: 20%;
+    }
+    .troops {
+        margin-top: 50px;
+        padding: 0;
+        font-family: Maison-Bold;
+    }
+    .talent {
+        padding: 0;
+    }
+    .selengkapnya {
+        margin-top: 10px;
+        margin-left: -5px;
+    }
 }
