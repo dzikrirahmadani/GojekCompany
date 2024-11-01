@@ -1,1 +1,1 @@
-![Deskripsi Gambar](demo-gjk.png)
+![Deskripsi Gambar](demo-gjk.jpg)
